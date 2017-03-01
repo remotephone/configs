@@ -19,13 +19,13 @@ nnoremap <space> za
 " Python
 
 au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent 
+au BufNewFile *.py set fileformat=unix
 
 "Web stuff
 
@@ -45,4 +45,6 @@ au BufRead,BufNewFile *.c,*.h match BadWhitespace /\s\+$/
 au         BufNewFile *.c,*.h set fileformat=unix
 au BufRead,BufNewFile *.c,*.h let b:comment_leader = '/* '
 
+" Use the below highlight group when displaying bad whitespace is desired.
+highlight BadWhitespace ctermbg=red guibg=red
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
