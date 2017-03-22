@@ -9,6 +9,9 @@ set encoding=utf-8
 let python_highlight_all=1
 syntax on
 
+" Set number lines
+set number
+
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
@@ -25,6 +28,9 @@ au BufNewFile,BufRead *.py set textwidth=79
 au BufNewFile,BufRead *.py set expandtab
 au BufNewFile,BufRead *.py set autoindent 
 au BufNewFile         *.py set fileformat=unix
+au BufNewFile         *.py set cursorline 
+au BufNewFile         *.py set showmatch
+
 
 
 "Web stuff
