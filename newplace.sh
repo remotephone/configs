@@ -1,11 +1,12 @@
 #!/bin/bash
 
 ## This will get a new VM or whatever set up like I like it. 
+## Works on Ubuntu for sure, probably some other stuff too, I dunno.
 
 ## Get some colors
 echo "Making color dir..."
-mkdir ~/.vim/
-mkdir ~/.vim/colors
+
+mkdir -p ~/.vim/colors
 
 echo "Getting colors..."
 curl -s https://raw.githubusercontent.com/raphamorim/lucario/master/colors/lucario.vim -o ~/.vim/colors/lucario.vim
@@ -13,7 +14,7 @@ curl -s https://raw.githubusercontent.com/raphamorim/lucario/master/colors/lucar
 ## Install Vundle
 
 echo "Creating the bundle dir and getting Vundle..."
-mkdir ~/.vim/bundle/
+mkdir -p ~/.vim/bundle/
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ## Get my .vimrc
