@@ -8,7 +8,7 @@ mkdir ~/.vim/
 mkdir ~/.vim/colors
 
 echo "Getting colors..."
-curl https://raw.githubusercontent.com/raphamorim/lucario/master/colors/lucario.vim -o ~/.vim/colors/lucario.vim
+curl -s https://raw.githubusercontent.com/raphamorim/lucario/master/colors/lucario.vim -o ~/.vim/colors/lucario.vim
 
 ## Install Vundle
 
@@ -19,7 +19,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ## Get my .vimrc
 
 echo "Getting the vimrc..."
-curl https://raw.githubusercontent.com/remotephone/configs/master/.vimrc -o ~/.vimrc
+curl -s https://raw.githubusercontent.com/remotephone/configs/master/.vimrc -o ~/.vimrc
 
 ##Install plugins
 echo "Installing plugins...."
