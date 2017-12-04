@@ -1,0 +1,11 @@
+# This is not real sets of credentials, its for a test.
+
+#some predictability
+username=admin
+#some unpredictability
+password=adminxfje5341
+
+DB_USERNAME=remotephondb
+DB_PASSWORD=remotephonepassword
+
+INTERNAL_DB="db.internal.servers.local"
